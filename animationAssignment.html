@@ -198,6 +198,25 @@
             background-color: #575757;
         }
 
+        .spinner {
+            margin-left: 400px;
+            width: 50px;
+            height: 50px;
+            border: 8px solid #f0f0f0;
+            border-top: 8px solid #db3434;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -241,6 +260,8 @@
             <li><a href="#">Contact Us</a></li>
         </ul>
     </nav>
+
+    <div class="spinner"></div>
 
     <script>
         document.querySelector('.menu-button').addEventListener('click', () => {
